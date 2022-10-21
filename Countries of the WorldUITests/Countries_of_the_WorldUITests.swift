@@ -22,12 +22,38 @@ final class Countries_of_the_WorldUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func test_mainList() throws {
         let app = XCUIApplication()
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let collectionViewsQuery = app.collectionViews
+        let angolaButton = collectionViewsQuery.buttons["Angola, 🇦🇴"]
+        XCTAssert(angolaButton.waitForExistence(timeout: 10))
+        XCTAssert(app.navigationBars["Countries"].buttons["Sort"].waitForExistence(timeout: 10))
+        let verticalScrollBar = app.collectionViews.firstMatch
+        verticalScrollBar.swipeUp()
+        verticalScrollBar.swipeDown()
+        app.navigationBars["Countries"].buttons["Sort"].tap()
+        XCTAssert(collectionViewsQuery.buttons["AFRICA"].waitForExistence(timeout: 10))
+        collectionViewsQuery.buttons["AFRICA"].tap()
+        XCTAssert(collectionViewsQuery.buttons["AMERICAS"].waitForExistence(timeout: 10))
+        app.navigationBars["Countries"].buttons["Sort"].tap()
+        XCTAssert(collectionViewsQuery.buttons["A"].waitForExistence(timeout: 10))
+        
+    }
+    
+    func testDetailsScreen() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let collectionViewsQuery = app.collectionViews
+        collectionViewsQuery.buttons["Angola, 🇦🇴"].tap()
+        
+        XCTAssert(app.staticTexts["Languages: Portuguese"].waitForExistence(timeout: 15))
+        XCTAssert(app.staticTexts["Capital: Luanda"].waitForExistence(timeout: 15))
+        XCTAssert(app.maps.firstMatch.waitForExistence(timeout: 15))
+        XCTAssert(app.navigationBars.firstMatch.waitForExistence(timeout: 15))
+                
     }
 
     func testLaunchPerformance() throws {

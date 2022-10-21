@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8CFD80B28FFFEA8005682A0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CFD80A28FFFEA8005682A0 /* Extensions.swift */; };
+		C8CFD80D29000096005682A0 /* FetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CFD80C29000096005682A0 /* FetchService.swift */; };
+		C8D37ECD28FE982F0046D143 /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D37ECC28FE982F0046D143 /* CountryViewModel.swift */; };
 		C8FE6D3728FD7E1E00F5C945 /* Countries_of_the_WorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE6D3628FD7E1E00F5C945 /* Countries_of_the_WorldApp.swift */; };
 		C8FE6D3928FD7E1E00F5C945 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE6D3828FD7E1E00F5C945 /* ContentView.swift */; };
 		C8FE6D3B28FD7E1F00F5C945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8FE6D3A28FD7E1F00F5C945 /* Assets.xcassets */; };
@@ -14,6 +17,8 @@
 		C8FE6D4828FD7E1F00F5C945 /* Countries_of_the_WorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE6D4728FD7E1F00F5C945 /* Countries_of_the_WorldTests.swift */; };
 		C8FE6D5228FD7E1F00F5C945 /* Countries_of_the_WorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE6D5128FD7E1F00F5C945 /* Countries_of_the_WorldUITests.swift */; };
 		C8FE6D5428FD7E1F00F5C945 /* Countries_of_the_WorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE6D5328FD7E1F00F5C945 /* Countries_of_the_WorldUITestsLaunchTests.swift */; };
+		C8FE6D6128FD998B00F5C945 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE6D6028FD998B00F5C945 /* Country.swift */; };
+		C8FE6D6328FDC21500F5C945 /* CountryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE6D6228FDC21500F5C945 /* CountryDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C8C8D183290298D800CBE15C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C8CFD80A28FFFEA8005682A0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C8CFD80C29000096005682A0 /* FetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchService.swift; sourceTree = "<group>"; };
+		C8D37ECC28FE982F0046D143 /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
 		C8FE6D3328FD7E1E00F5C945 /* Countries of the World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Countries of the World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8FE6D3628FD7E1E00F5C945 /* Countries_of_the_WorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries_of_the_WorldApp.swift; sourceTree = "<group>"; };
 		C8FE6D3828FD7E1E00F5C945 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +53,8 @@
 		C8FE6D4D28FD7E1F00F5C945 /* Countries of the WorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Countries of the WorldUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8FE6D5128FD7E1F00F5C945 /* Countries_of_the_WorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries_of_the_WorldUITests.swift; sourceTree = "<group>"; };
 		C8FE6D5328FD7E1F00F5C945 /* Countries_of_the_WorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries_of_the_WorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C8FE6D6028FD998B00F5C945 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		C8FE6D6228FDC21500F5C945 /* CountryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +82,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8CFD80628FFFC7F005682A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C8FE6D3828FD7E1E00F5C945 /* ContentView.swift */,
+				C8D37ECC28FE982F0046D143 /* CountryViewModel.swift */,
+				C8FE6D6228FDC21500F5C945 /* CountryDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C8CFD80728FFFC99005682A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C8FE6D6028FD998B00F5C945 /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8CFD80828FFFE83005682A0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C8CFD80A28FFFEA8005682A0 /* Extensions.swift */,
+				C8CFD80C29000096005682A0 /* FetchService.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		C8FE6D2A28FD7E1D00F5C945 = {
 			isa = PBXGroup;
 			children = (
+				C8C8D183290298D800CBE15C /* README.md */,
 				C8FE6D3528FD7E1E00F5C945 /* Countries of the World */,
 				C8FE6D4628FD7E1F00F5C945 /* Countries of the WorldTests */,
 				C8FE6D5028FD7E1F00F5C945 /* Countries of the WorldUITests */,
@@ -94,8 +133,10 @@
 		C8FE6D3528FD7E1E00F5C945 /* Countries of the World */ = {
 			isa = PBXGroup;
 			children = (
+				C8CFD80828FFFE83005682A0 /* Helper */,
+				C8CFD80728FFFC99005682A0 /* Model */,
+				C8CFD80628FFFC7F005682A0 /* Views */,
 				C8FE6D3628FD7E1E00F5C945 /* Countries_of_the_WorldApp.swift */,
-				C8FE6D3828FD7E1E00F5C945 /* ContentView.swift */,
 				C8FE6D3A28FD7E1F00F5C945 /* Assets.xcassets */,
 				C8FE6D3C28FD7E1F00F5C945 /* Preview Content */,
 			);
@@ -257,8 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8FE6D6328FDC21500F5C945 /* CountryDetailsView.swift in Sources */,
+				C8CFD80B28FFFEA8005682A0 /* Extensions.swift in Sources */,
 				C8FE6D3928FD7E1E00F5C945 /* ContentView.swift in Sources */,
+				C8FE6D6128FD998B00F5C945 /* Country.swift in Sources */,
 				C8FE6D3728FD7E1E00F5C945 /* Countries_of_the_WorldApp.swift in Sources */,
+				C8CFD80D29000096005682A0 /* FetchService.swift in Sources */,
+				C8D37ECD28FE982F0046D143 /* CountryViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,11 +466,11 @@
 				DEVELOPMENT_TEAM = QN2942J7VH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Countries of the World";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,9 +478,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "it.sfl.Countries-of-the-World";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -449,11 +498,11 @@
 				DEVELOPMENT_TEAM = QN2942J7VH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Countries of the World";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,9 +510,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "it.sfl.Countries-of-the-World";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -480,9 +532,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "it.sfl.Countries-of-the-WorldTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Countries of the World.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Countries of the World";
 			};
 			name = Debug;
@@ -500,9 +555,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "it.sfl.Countries-of-the-WorldTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Countries of the World.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Countries of the World";
 			};
 			name = Release;
@@ -518,9 +576,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "it.sfl.Countries-of-the-WorldUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = "Countries of the World";
 			};
 			name = Debug;
@@ -536,9 +597,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "it.sfl.Countries-of-the-WorldUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = "Countries of the World";
 			};
 			name = Release;
