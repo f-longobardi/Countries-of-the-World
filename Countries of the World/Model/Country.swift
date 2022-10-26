@@ -59,7 +59,7 @@ struct Country:Identifiable, Hashable{
         self.flagUrl = "https://flagcdn.com/w320/it.png"
         self.languages = ["italian"]
         self.region = "Europe"
-        self.translations = ["eng":"Italian Republic","ita":"Repubblica italiana"]
+        self.translations = ["usa":"Italian Republic","ita":"Repubblica italiana"]
         self.area = 40000
         self.id = "IT"
     }

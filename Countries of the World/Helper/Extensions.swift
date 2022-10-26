@@ -262,7 +262,7 @@ extension Locale {
             "zm": "zmb",
             "zw": "zwe"
         ]
-        return codes[self.language.languageCode?.identifier ?? ""] ?? "eng"
+        return codes[self.language.languageCode?.identifier ?? ""] ?? "usa"
         
     }
 }
